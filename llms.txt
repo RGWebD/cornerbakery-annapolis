@@ -1,0 +1,51 @@
+# The Corner Bakery Pasteleria & Market
+
+> Latino-owned bakery (panadería & pastelería) and small market in Annapolis, Maryland. Known for pan dulce and conchas from a self-serve pastry wall, custom birthday / quinceañera / wedding cakes, tres leches, flan, cakes in a cup, rolled ice cream, juices, breakfast items, birria sandwiches and piñatas.
+
+- Address: 2140 Forest Dr, Annapolis, MD 21401 (in the Colonial Parole Center)
+- Phone: (443) 949-0309
+- Email: bakerygalleria@icloud.com
+- Facebook: https://www.facebook.com/TheCornerBakeryCafePasteleria/
+- Google Maps: https://www.google.com/maps/place/The+Corner+Bakery+Pasteleria+%26+Market/@38.9779628,-76.536517,16z/data=!4m6!3m5!1s0x89b7f6c5efd0cb41:0xc60131baa17e5c86!8m2!3d38.9779628!4d-76.536517!16s%2Fg%2F11f4m7khv6
+- Service options: takeout, dine-in. No delivery.
+- Payments: credit cards, debit cards, NFC mobile payments.
+- Accessibility: wheelchair-accessible parking lot.
+- Google rating: 3.7 from 108 reviews (as of November 2026).
+
+## Hours (America/New_York)
+- Monday: 7 AM – 9 PM
+- Tuesday: 7 AM – 9 PM
+- Wednesday: 7 AM – 9 PM
+- Thursday: 7 AM – 9 PM
+- Friday: 7 AM – 9 PM
+- Saturday: 6 AM – 9 PM
+- Sunday: 6 AM – 8 PM
+- Holiday hours may differ. Thanksgiving, Thu Nov 26 2026: a bakery flyer says "open all night"; Google says hours might differ. Call to confirm.
+
+## Pages
+- [Home](https://rgwebd.github.io/cornerbakery-annapolis/): overview, highlights, reviews
+- [Panadería & Menu](https://rgwebd.github.io/cornerbakery-annapolis/menu.html): pan dulce, pastries, tres leches, flan, cakes in a cup, rolled ice cream, breakfast, sandwiches, drinks, market
+- [Custom Cakes](https://rgwebd.github.io/cornerbakery-annapolis/cakes.html): cake gallery, occasions, how to order (call or email; pickup at the shop)
+- [Reviews](https://rgwebd.github.io/cornerbakery-annapolis/reviews.html): word-for-word Google reviews
+- [Visit & FAQ](https://rgwebd.github.io/cornerbakery-annapolis/visit.html): hours, map, contact, FAQ
+
+## FAQ
+- Q: What are your hours?
+  A: Monday through Friday 7 AM–9 PM, Saturday 6 AM–9 PM and Sunday 6 AM–8 PM. Holiday hours may differ — call (443) 949-0309 to confirm.
+- Q: Are you open on Thanksgiving?
+  A: The bakery’s Facebook flyer says it will be open all night on Thursday, November 26, 2026 (Thanksgiving). Google notes that hours on Thanksgiving and Black Friday might differ, so please call (443) 949-0309 before you go.
+- Q: Where are you located?
+  A: 2140 Forest Dr, Annapolis, MD 21401, inside the Colonial Parole Center. There is a wheelchair-accessible parking lot.
+- Q: Do you deliver?
+  A: No — the bakery offers takeout and on-site dining, but not delivery.
+- Q: Can I order a custom cake?
+  A: Yes. Call (443) 949-0309 or email bakerygalleria@icloud.com with your date, guest count, flavor ideas and a photo or theme. Cakes are picked up at the shop.
+- Q: What forms of payment do you take?
+  A: Credit cards, debit cards and NFC mobile payments (tap to pay).
+- Q: What do you sell besides bread?
+  A: Custom and birthday cakes, tres leches, flan, cakes in a cup, rolled ice cream, juices, breakfast items, birria sandwiches, piñatas and market items.
+- Q: Is The Corner Bakery Latino-owned?
+  A: Yes — the business identifies as Latino-owned on its Google Business Profile.
+
+Prices are not published online; call the bakery for current prices.
+This site is a design preview by RGWebD.
