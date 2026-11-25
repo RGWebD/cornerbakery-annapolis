@@ -216,6 +216,7 @@ def home():
 <section class="sec paper"><div class="wrap">
 <div class="sec-head center"><span class="eyebrow">Escoge tu pan</span><h2 class="split">Pick your pan</h2><p class="lead rv" style="margin-inline:auto">Tap a number to meet a few favorites from the wall. Not sure what to try? Ask at the counter.</p></div>
 <div class="spot-stage rv">{img('g38','Pan dulce wall with chalk labels for conchas, besos, marquesote, orejas and more',sizes='(max-width:1240px) 92vw, 1220px')}{pins}</div>
+<ol class="spot-list rv">{''.join(f'<li><b>{n}</b> — {d}</li>' for n,d,*_ in sp)}</ol>
 </div></section>
 
 <section class="sec"><div class="wrap why">

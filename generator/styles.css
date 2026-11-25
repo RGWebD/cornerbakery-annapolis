@@ -434,6 +434,10 @@ h3{font-size:clamp(1.35rem,2vw,1.7rem);font-weight:750}
   .duo{grid-template-columns:1fr}
   .spot-stage .pin{width:26px;height:26px;font-size:.8rem}
   .pop{width:210px;font-size:.88rem}
+  .spot-list{display:grid;gap:8px;margin-top:22px;padding-left:22px;font-size:.95rem}
+  .spot-list b{font-family:var(--fd)}
+  .cake-stack{height:540px;margin-bottom:20px}
+  .cake-stack .k4{bottom:2%}
   .sticker{width:100px;height:100px;font-size:1.2rem}
   .mbar{display:grid;grid-template-columns:1fr 1fr 1fr;position:fixed;left:10px;right:10px;bottom:10px;z-index:105;background:var(--choc);border-radius:20px;padding:6px;gap:6px;box-shadow:0 16px 40px -10px rgba(0,0,0,.6);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
   .mbar.show{transform:none}
