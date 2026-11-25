@@ -129,7 +129,7 @@ def nav(cur, p=''):
     links = ''.join(f'<li><a href="{p}{u}"{" aria-current=\"page\"" if u==cur else ""}>{n}</a></li>' for u,n,_ in PAGES)
     dl = ''.join(f'<a class="dl" href="{p}{u}"{" aria-current=\"page\"" if u==cur else ""}>{n}<small>{s}</small></a>' for u,n,s in PAGES)
     return f'''<a class="skip" href="#main">Skip to content</a><div class="progress" aria-hidden="true"></div>
-<div class="holiday" role="note" hidden><b>Thanksgiving week:</b> our flyer says we’re <i lang="es">¡abierto toda la noche!</i> on Thu, Nov 26 — holiday hours may differ, so <a href="tel:{B['tel']}">call {B['phone']}</a> to confirm. <button type="button" aria-label="Dismiss holiday notice" style="position:absolute;right:10px;top:50%;translate:0 -50%;background:none;border:0;color:inherit;font-size:1.2rem">×</button></div>
+<div class="holiday" role="note" hidden><span class="short"><b>Thanksgiving:</b> open late Thu 11/26 per our flyer — <a href="tel:{B['tel']}">call to confirm</a></span><span class="long"><b>Thanksgiving week:</b> our flyer says we’re <i lang="es">¡abierto toda la noche!</i> on Thu, Nov 26 — holiday hours may differ, so <a href="tel:{B['tel']}">call {B['phone']}</a> to confirm.</span> <button type="button" aria-label="Dismiss holiday notice" style="position:absolute;right:10px;top:50%;translate:0 -50%;background:none;border:0;color:inherit;font-size:1.2rem">×</button></div>
 <header class="nav"><div class="wrap">
 <a class="brand" href="{p}index.html" aria-label="{B['short']} home"><img src="{p}assets/brand/logo-160.webp" width="160" height="173" alt="The Corner Bakery logo"><span><b>The Corner Bakery</b><small>Pastelería &amp; Market</small></span></a>
 <nav aria-label="Main"><ul class="menu">{links}</ul></nav>
@@ -160,12 +160,12 @@ def phero(title_html, eyebrow, lead, crumbs, image, cta, giant, tall=False):
 <div><nav class="crumbs" aria-label="Breadcrumb">{cr}</nav><span class="eyebrow">{eyebrow}</span><h1 class="split" style="margin-top:14px">{title_html}</h1><p class="lead rv">{lead}</p><div class="ctas rv d1" style="display:flex;gap:12px;flex-wrap:wrap">{cta}</div></div>
 <div class="frame{' tall' if tall else ''} rv">{image}</div></div></section>'''
 
-def cta_band(p=''):
+def cta_band(p='', photo=('g23','The Corner Bakery storefront on Forest Drive with its Panaderia & Pasteleria sign')):
     return f'''<section class="sec cta-band"><div class="wrap cta-grid">
 <div><span class="eyebrow" style="color:var(--choc)">Ven con hambre</span><h2 class="split" style="margin-top:14px">Come hungry. <span class="script">Leave with a box.</span></h2>
 <div class="addr rv"><span>{B['street']} · {B['plaza']} · {B['city']}, {B['region']} {B['zip']}</span><span>Open 7 days · Mon–Fri 7 AM–9 PM · Sat 6 AM–9 PM · Sun 6 AM–8 PM</span><a href="tel:{B['tel']}">{B['phone']}</a></div>
 <div class="rv d1" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn mag" href="tel:{B['tel']}">{I['phone']}Call the bakery</a><a class="btn light mag" href="{B['dirs']}" target="_blank" rel="noopener">{I['pin']}Get directions</a></div></div>
-<div class="frame rv">{img('g23','The Corner Bakery storefront on Forest Drive with its Panaderia & Pasteleria sign')}</div></div></section>'''
+<div class="frame rv">{img(*photo)}</div></div></section>'''
 
 def page(path, title, desc, body, schemas, p=''):
     out = head(title, desc, path, schemas, base_href=p) + '<body class="grain">' + nav(path, p) + f'<main id="main">{body}</main>' + footer(p)
@@ -322,7 +322,7 @@ def cakes():
 <div><span class="eyebrow">Para cada ocasión</span><h2 class="split" style="margin-top:14px">Every kind of celebration</h2><p class="lead rv" style="margin-top:16px">One family ordered a tres leches Barbie cake last-minute for a daughter’s party; another planned an engagement cake and then their wedding cake. Whatever you’re celebrating, start with a call.</p>
 <div class="occasions rv">{''.join(f'<span>{o}</span>' for o in occ)}</div>
 <p class="rv">Specialties customers mention: <b>tres leches layered cakes</b>, <b>choco flan</b> (one with Ferrero Rocher filling!), fruit-topped cakes and fully custom themed designs.</p></div>
-<div class="collage"><figure class="c1" data-speed=".06">{img('g33','Two-tier jungle cake at a party',sizes='(max-width:900px) 52vw, 30vw')}</figure><figure class="c2" data-speed="-.08">{img('g34','Number two race-track cake',sizes='(max-width:900px) 44vw, 24vw')}</figure><figure class="c3" data-speed=".1">{img('g10','Display case of cakes',sizes='(max-width:900px) 46vw, 26vw')}</figure><div class="sticker" aria-hidden="true">¡Feliz<br>día!</div></div>
+<div class="collage"><figure class="c1" data-speed=".06">{img('g05','Refrigerated case of decorated cakes',sizes='(max-width:900px) 52vw, 30vw')}</figure><figure class="c2" data-speed="-.08">{img('g02','Fruit-topped drip cake with purple rosettes',sizes='(max-width:900px) 44vw, 24vw')}</figure><figure class="c3" data-speed=".1">{img('g10','Display case of cakes',sizes='(max-width:900px) 46vw, 26vw')}</figure><div class="sticker" aria-hidden="true">¡Feliz<br>día!</div></div>
 </div></section>
 <section class="sec dark"><div class="wrap"><div class="sec-head center"><span class="eyebrow">Cómo pedir</span><h2 class="split">How custom cakes work</h2></div>{tl}</div></section>
 <section class="sec" id="order"><div class="wrap order">
@@ -384,7 +384,7 @@ def visit():
 <section class="sec paper"><div class="wrap"><div class="sec-head"><span class="eyebrow">Bueno saber</span><h2 class="split">Good to know</h2></div><div class="amen">{am}</div>
 <div class="duo" style="margin-top:40px"><figure class="rv">{img('g44','Long bakery counter and bright dining area')}<figcaption>Inside: the long pastry counter</figcaption></figure><figure class="rv d1">{img('g27','Market area with piñatas and snacks')}<figcaption>The market corner, piñatas overhead</figcaption></figure></div></div></section>
 <section class="sec" id="faq"><div class="wrap"><div class="sec-head center"><span class="eyebrow">Preguntas</span><h2 class="split">Frequently asked questions</h2></div><div class="faq">{fq}</div></div></section>
-{cta_band()}'''
+{cta_band(photo=('g24','Self-serve pan dulce wall and glass pastry cases'))}'''
     fqs = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ]}
     page('visit.html','Visit, Hours & FAQ — The Corner Bakery, 2140 Forest Dr, Annapolis MD',
          'Hours, directions, map and FAQ for The Corner Bakery Pastelería & Market at 2140 Forest Dr in the Colonial Parole Center, Annapolis, MD. Open 7 days. (443) 949-0309.',

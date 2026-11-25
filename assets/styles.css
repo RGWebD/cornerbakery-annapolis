@@ -64,9 +64,9 @@ h3{font-size:clamp(1.35rem,2vw,1.7rem);font-weight:750}
 .burger[aria-expanded=true] span{background:transparent}
 .burger[aria-expanded=true] span:before{transform:translateY(6px) rotate(45deg)}
 .burger[aria-expanded=true] span:after{transform:translateY(-6px) rotate(-45deg)}
-.drawer{position:fixed;inset:0;z-index:99;background:var(--choc);color:var(--cream);padding:calc(var(--nav) + 40px) 8vw 40px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .5s cubic-bezier(.7,0,.2,1);visibility:hidden}
+.drawer{position:fixed;inset:0;z-index:99;background:var(--choc);color:var(--cream);padding:calc(var(--nav) + 90px) 8vw 40px;overflow-y:auto;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .5s cubic-bezier(.7,0,.2,1);visibility:hidden}
 .drawer.open{transform:none;visibility:visible}
-.drawer a.dl{font-family:var(--fd);font-weight:800;font-size:2.4rem;text-decoration:none;padding:4px 0;border-bottom:1px solid rgba(255,245,228,.12)}
+.drawer a.dl{font-family:var(--fd);font-weight:800;font-size:clamp(1.7rem,7vw,2.4rem);line-height:1.15;text-decoration:none;padding:4px 0;border-bottom:1px solid rgba(255,245,228,.12)}
 .drawer a.dl small{font-family:var(--fs);font-weight:400;color:var(--gold);font-size:1.3rem;margin-left:10px}
 .drawer .row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
 /* papel picado */
@@ -417,7 +417,9 @@ h3{font-size:clamp(1.35rem,2vw,1.7rem);font-weight:750}
   .polaroid{width:36%;padding:6px 6px 26px}
   .polaroid figcaption{font-size:1rem;bottom:3px}
   .hero-art .p1{left:-2%;bottom:-4%}
-  .hero-art .p2{right:-2%;top:4%}
+  .hero-art .p2{right:0;top:4%}
+  .holiday .long{display:none}
+  .holiday{font-size:.82rem}
   .stamp-wrap{display:none}
   .hero .ctas .btn{flex:1 1 100%;justify-content:center}
   .teasers{grid-template-columns:1fr}
@@ -446,3 +448,6 @@ h3{font-size:clamp(1.35rem,2vw,1.7rem);font-weight:750}
   .rv,.split .w>span{opacity:1!important;transform:none!important}
   .loader{display:none}
 }
+
+.holiday .short{display:none}
+@media (max-width:600px){.holiday .short{display:inline}}
